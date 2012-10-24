@@ -16,11 +16,12 @@ end
 end
 
 #it "existe tirada valida" do
-
+@rps.tiradas.should=={:rock, :paper, :scissors}
 #end
 
 
 #it "existe una tirada que gana" do
+@rps.tiradag.should=={:rock => :paper, :scissors=> :rock, :paper=> :scissors}
 #end
 
 
