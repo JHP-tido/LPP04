@@ -1,5 +1,8 @@
 class Rps
+def jugada
+end
 
-enclass Rps
+def jugadac
+end
 
 end
