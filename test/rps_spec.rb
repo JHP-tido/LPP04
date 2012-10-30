@@ -34,18 +34,22 @@ it "Se debe invocar al metodo obtener_maquina() para recoger la tirada de la maq
 end
 
 it "Debe existir una lista de resultados de un juego desde el punto de vista de la maquina" do
-
+@rps.lista_resultados().should_not == nil #si no hay nada falla
 end
 
-#it "ganador determinado al invocar jugar()" do
+it "Debe existir un resultado para un juego, desde el punto de vista de la maquina" do
+@rps.resultado.should_not == nil
+end
+
+
+it "Se debe invocar al metodo jugar() para determinar el ganador de la tirada" do
+@rps.jugar().should_not == nil
+end
+
+
+#it "Se debe de comprobar que las tiradas de la maquina al ser aleatorias recorren las tres posibilidades" do
 #end
 
-
-#it "las tiradas de la maquina son aleatorias" do
+#it "Se debe comprobar que las tiradas de la maquina y del humano no son siempre la misma" do
 #end
-
-
-#it "las tiradas de la maquina y el humano son distintas a veces" do
-#end
-
 end
