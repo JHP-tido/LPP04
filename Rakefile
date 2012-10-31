@@ -1,4 +1,4 @@
-task :default => :test
+task :default => :rspec
 
 desc "Run ./bin/rps.rb "
 task :ejecutar do
